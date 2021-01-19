@@ -33,7 +33,9 @@ class LoginForm extends React.Component {
             id="username" 
             name="username" 
             type="text" 
-            onChange={e => this.handleChange(e)}/>
+            onChange={e => this.handleChange(e)}
+            value={this.state.username}
+            />
           </label>
         </div>
         <div>
@@ -44,6 +46,7 @@ class LoginForm extends React.Component {
             name="password" 
             type="password" 
             onChange={e => this.handleChange(e)}
+            value={this.state.password}
             />
           </label>
         </div>
